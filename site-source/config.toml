@@ -21,7 +21,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
 [Languages.en]
-title = "Documentation for Hugo Learn Theme"
+title = "Tutorials for the community"
 weight = 1
 languageName = "English"
 
