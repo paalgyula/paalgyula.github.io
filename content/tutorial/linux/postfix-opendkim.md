@@ -98,6 +98,13 @@ KeyTable: maps key names to signing keys
 * **UserID**: the opendkim process runs under this user and group
 * **Socket**: the milter will listen on the socket specified here, Posfix will send messages to opendkim for signing and verification through this socket; 12301@localhost defines a TCP socket that listens on localhost, port 12301
 
+If you want to use unix socket instead of inet ports, you have to add postfix user to opendkim group:
+
+```
+sudo adduser postfix opendkim
+sudo service postfix restart
+```
+
 {{% notice tip %}}
  This simple configuration is meant to allow message signing for one or more domains, to learn about other options please go [here](http://www.opendkim.org/opendkim.conf.5.html).
 {{% /notice %}}
@@ -179,12 +186,11 @@ sudo nano /etc/opendkim/SigningTable
 ```
 
 This file is used for declaring the domains/email addresses and their selectors.
-{{<highlight bash>}}
+```
 *@example.com mail._domainkey.example.com
-
-# *@example.net mail._domainkey.example.net
-# *@example.org mail._domainkey.example.org
-{{</highlight>}}
+#*@example.net mail._domainkey.example.net
+#*@example.org mail._domainkey.example.org
+```
 
 #### Generate the public and private keys
 Change to the keys directory:
@@ -204,9 +210,11 @@ sudo opendkim-genkey -s mail -d example.com
 ```
 -s specifies the selector and -d the domain, this command will create two files, mail.private is our private key and mail.txt contains the public key.
 
-Change the owner of the private key to opendkim user:
+Change the owner of the private key to opendkim user and fix permissions:
 ```
 sudo chown opendkim:opendkim mail.private
+sudo chown -R opendkim:opendkim /etc/opendkim
+sudo chmod -R go-rwx /etc/opendkim/keys
 ```
 
 #### Add the public key to the domain's DNS records
@@ -222,14 +230,27 @@ mail._domainkey IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCg
 ```
 Copy that key and add a TXT record to your domain's DNS entries:
 
-**Name**: mail._domainkey.example.com.
+**Name**: mail._domainkey.example.com.  
 
-**Text**: "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9..."
+**Text**: "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9..."  
 
 Please note that the DNS changes may take a couple of hours to propagate.
 
+#### Systemd service check
+on ubuntu you should modify the ```/lib/systemd/system/opendkim.service``` because ubuntu starts the daemon as a unix socket by default.
+
+The file contains an __*ExecStart*__ line which should look like this:
+
+```
+ExecStart=/usr/sbin/opendkim -P /var/run/opendkim/opendkim.pid -p local:/var/run/opendkim/opendkim.sock -p inet:12301@localhost
+```
+So we need to added a ```-p inet:12301@localhost``` parameter for listen on the internet socket too.
+
+#### Restarting/Testing
+
 Restart Postfix and OpenDKIM:
 ```
+sudo systemctl daemon-reload
 sudo service postfix restart
 sudo service opendkim restart
 ```
