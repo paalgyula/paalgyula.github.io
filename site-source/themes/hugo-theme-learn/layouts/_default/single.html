@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+
+{{ .Content }}
+
+<footer class=" footline" >
+	{{with .Params.LastModifierDisplayName}}
+		<div style="text-align: center; margin-top: 90px;">
+			<small>If you find any mistake please send a mail to the author:</small><br/>
+			<a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a> <i class='fa fa-user'></i><br/>
+			{{with $.Date}} <i class='fa fa-calendar'></i> {{ .Format "2006.01.02"}}{{end}}
+	    </div>
+	{{end}}
+</footer>
+
+{{ partial "footer.html" . }}
