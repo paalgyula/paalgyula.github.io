@@ -10,7 +10,7 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/paalgyula/tutorial-site/edit/master/content/"
+  editURL = "https://github.com/paalgyula/tutorial-site/edit/site-source/content/"
   description = "Paal Gyula's public knowledgebase based on 11years work experience"
   author = "Paál Gyula"
   showVisitedLinks = false
