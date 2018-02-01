@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/en/tutorial/</loc>
+    <lastmod>2018-01-31T12:19:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/tutorial/linux/</loc>
+    <lastmod>2018-01-31T19:07:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/wiki/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/tutorial/linux/postfix-opendkim/</loc>
+    <lastmod>2018-01-31T19:07:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/wiki/domain-name-system/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/wiki/open-mail-relay/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/</loc>
+    <lastmod>2018-01-31T19:07:41+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/"
+                />
+  </url>
+  
+</urlset>
