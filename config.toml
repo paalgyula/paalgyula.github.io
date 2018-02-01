@@ -10,7 +10,7 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/paalgyula/tutorial-site/edit/site-source/content/"
+  editURL = "https://github.com/paalgyula/paalgyula.github.io/edit/master/content/"
   description = "Paal Gyula's public knowledgebase based on 11years work experience"
   author = "Paál Gyula"
   showVisitedLinks = false
@@ -28,48 +28,11 @@ languageName = "English"
 [[Languages.en.menu.shortcuts]] 
 name = "<i class='fa fa-fw fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
+url = "https://github.com/paalgyula/paalgyula.github.io"
 weight = 10
-
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fa fa-fw fa-camera'></i> Showcases"
-url = "showcase"
-weight = 11
-
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fa fa-fw fa-bookmark'></i> Hugo Documentation"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
 
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fa fa-fw fa-bullhorn'></i> Credits"
 url = "/credits"
 weight = 30
 
-[Languages.fr]
-title = "Documentation du thème Hugo Learn"
-weight = 2
-languageName = "Français"
-
-[[Languages.fr.menu.shortcuts]]
-name = "<i class='fa fa-fw fa-github'></i> Repo Github"
-identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
-weight = 10
-
-[[Languages.fr.menu.shortcuts]]
-name = "<i class='fa fa-fw fa-camera'></i> Vitrine"
-url = "/showcase"
-weight = 11
-
-[[Languages.fr.menu.shortcuts]]
-name = "<i class='fa fa-fw fa-bookmark'></i> Documentation Hugo"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
-
-[[Languages.fr.menu.shortcuts]]
-name = "<i class='fa fa-fw fa-bullhorn'></i> Crédits"
-url = "/credits"
-weight = 30

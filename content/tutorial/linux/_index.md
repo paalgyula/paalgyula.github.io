@@ -6,8 +6,7 @@ weight: 2
 draft: false
 ---
 
-Linux Tutorial series
+## Linux Tutorial series
 
-{{% children style="div" depth="3" description="true" %}}
+{{% children style="div" depth="3" %}}
 
-{{% button %}}
