@@ -3,6 +3,10 @@
     text-shadow: #000000 0px 0px 1px;
 }
 
+#body img.shadow, #body .video-container.shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
 :root{
     
     --MAIN-TEXT-color:#323232; /* Color of text by default */

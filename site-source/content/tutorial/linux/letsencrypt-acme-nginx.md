@@ -75,7 +75,7 @@ We previously installed the certbot's NGINX plugin so the plugin will guide us t
 sudo certbot
 ```
 The certbot will find our predefined virtualhost something like this:
-![Certbot Step 1](/images/screenshots/certbot_step_1.png "Certbot Step 1")
+![Certbot Step 1](/images/screenshots/certbot_step_1.png?classes=shadow)
 You should type `1` (or the id of your domain) and press Enter
 
 After this there will be some question you should fill, then in the end the script will ask for what will you gonna do with the plain HTTP traffic. I suggest use the redirect method which is the **2nd option**, this option will redirect all unencrypted traffic to HTTPS channel. Select `2` and then press `Enter`.
