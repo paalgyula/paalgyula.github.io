@@ -6,10 +6,31 @@
     <description>Recent content in PI Company on Tutorials for the community</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 01 Feb 2018 19:22:05 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Feb 2018 12:35:12 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Secure Shell (SSH)</title>
+      <link>/wiki/ssh/</link>
+      <pubDate>Fri, 02 Feb 2018 12:35:12 +0100</pubDate>
+      
+      <guid>/wiki/ssh/</guid>
+      <description>SSH - Secure Shell SSH (Secure SHell) is an encrypted terminal program that replaces the classic telnet tool on Unix-like operating systems.
+In addition to remote terminal access provided by the main ssh binary, the SSH suite of programs has grown to include other tools such as SCP (Secure Copy Program) and SFTP (Secure File Transfer Protocol).
+SFTP - Secure File Transfer Protocol The SSH File Transfer Protocol (also Secure File Transfer Protocol, or SFTP) is a network protocol that provides file access, file transfer, and file management over any reliable data stream.</description>
+    </item>
+    
+    <item>
+      <title>SSH Tricks</title>
+      <link>/tutorial/linux/easy-ssh-tricks/</link>
+      <pubDate>Fri, 02 Feb 2018 12:29:49 +0100</pubDate>
+      
+      <guid>/tutorial/linux/easy-ssh-tricks/</guid>
+      <description> SSH Tweaks/tricks SSH public key authentication Introduction Public-key authentication with Secure Shell is more secure than password authentication, as it provides much stronger identity checking. An entity must possess both the private key and the correct passphrase to authenticate itself to another entity.
+Generating your keypair ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.com&amp;quot;  </description>
+    </item>
     
     <item>
       <title>Credits</title>

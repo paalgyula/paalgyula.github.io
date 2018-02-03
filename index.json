@@ -11,14 +11,28 @@
 	"title": "Linux Tutorials",
 	"tags": [],
 	"description": "",
-	"content": " Linux Tutorial series  Letsencrypt Acme Nginx   Postfix DKIM   "
+	"content": " Linux Tutorial series  SSH Tricks   Letsencrypt Acme Nginx   Postfix DKIM   "
 },
 {
 	"uri": "/wiki/",
 	"title": "Wiki",
 	"tags": [],
 	"description": "",
-	"content": " WIKI pages for the tutorials  Domain Name System (DNS)   Open Mail Relay   "
+	"content": " WIKI pages for the tutorials  Secure Shell (SSH)   Domain Name System (DNS)   Open Mail Relay   "
+},
+{
+	"uri": "/wiki/ssh/",
+	"title": "Secure Shell (SSH)",
+	"tags": [],
+	"description": "",
+	"content": " SSH - Secure Shell SSH (Secure SHell) is an encrypted terminal program that replaces the classic telnet tool on Unix-like operating systems.\nIn addition to remote terminal access provided by the main ssh binary, the SSH suite of programs has grown to include other tools such as SCP (Secure Copy Program) and SFTP (Secure File Transfer Protocol).\nSFTP - Secure File Transfer Protocol The SSH File Transfer Protocol (also Secure File Transfer Protocol, or SFTP) is a network protocol that provides file access, file transfer, and file management over any reliable data stream. It was designed by the Internet Engineering Task Force (IETF) as an extension of the Secure Shell protocol (SSH) version 2.0 to provide secure file transfer capabilities.\nSCP - Secure Copy The SCP is a network protocol, based on the BSD RCP protocol, which supports file transfers between hosts on a network. SCP uses Secure Shell (SSH) for data transfer and uses the same mechanisms for authentication, thereby ensuring the authenticity and confidentiality of the data in transit. A client can send (upload) files to a server, optionally including their basic attributes (permissions, timestamps). Clients can also request files or directories from a server (download). SCP runs over TCP port 22 by default. Like RCP, there is no RFC that defines the specifics of the protocol.\n"
+},
+{
+	"uri": "/tutorial/linux/easy-ssh-tricks/",
+	"title": "SSH Tricks",
+	"tags": [],
+	"description": "",
+	"content": " SSH Tweaks/tricks SSH public key authentication Introduction Public-key authentication with Secure Shell is more secure than password authentication, as it provides much stronger identity checking. An entity must possess both the private key and the correct passphrase to authenticate itself to another entity.\nGenerating your keypair ssh-keygen -t rsa -b 4096 -C \u0026quot;your_email@example.com\u0026quot;  "
 },
 {
 	"uri": "/credits/",
