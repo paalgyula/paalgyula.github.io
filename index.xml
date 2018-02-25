@@ -28,8 +28,9 @@ SFTP - Secure File Transfer Protocol The SSH File Transfer Protocol (also Secure
       <pubDate>Fri, 02 Feb 2018 12:29:49 +0100</pubDate>
       
       <guid>/tutorial/linux/easy-ssh-tricks/</guid>
-      <description> SSH Tweaks/tricks SSH public key authentication Introduction Public-key authentication with Secure Shell is more secure than password authentication, as it provides much stronger identity checking. An entity must possess both the private key and the correct passphrase to authenticate itself to another entity.
-Generating your keypair ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.com&amp;quot;  </description>
+      <description>SSH Tweaks/tricks SSH public key authentication Introduction Public-key authentication with Secure Shell is more secure than password authentication, as it provides much stronger identity checking. An entity must possess both the private key and the correct passphrase to authenticate itself to another entity.
+Generating your keypair be sure that ~/.ssh/id_rsa doesnt exists or this command will override it!
+ ssh-keygen -t rsa -b 4096 -C &amp;quot;youremail@yourdomain.com&amp;quot;  This creates a new ssh key, using the provided email as a label.</description>
     </item>
     
     <item>
