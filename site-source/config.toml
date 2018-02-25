@@ -31,6 +31,12 @@ identifier = "ds"
 url = "https://github.com/paalgyula/paalgyula.github.io"
 weight = 10
 
+[[Languages.en.menu.shortcuts]] 
+name = "<i class='fa fa-fw fa-book'></i> My CV"
+identifier = "cv"
+url = "/cv"
+weight = 20
+
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fa fa-fw fa-bullhorn'></i> Credits"
 url = "/credits"
