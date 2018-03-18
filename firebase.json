@@ -1,7 +1,8 @@
 {
   "hosting": {
-    "public": ".",
+    "public": "public",
     "ignore": [
+      "**/.DS_Store",
       "firebase.json",
       "site-source",
       "**/.*",
